@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.21.2
+
+- **Atualização automática ao reabrir a janela.** Com o app vivo na bandeja (PR Notifier), a verificação agora também roda sempre que a janela volta a aparecer, no máximo a cada 2 minutos. A checagem periódica passou de 6 horas para 1 hora.
+
 ## 0.21.1
 
 - **Nenhum endereço de servidor fixo no aplicativo.** Credenciais do Git, clone, listagem de repositórios e a fonte NuGet usam o servidor da **conexão DevOps** configurada por cada usuário.
