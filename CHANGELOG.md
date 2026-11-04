@@ -1,5 +1,11 @@
 # Notas de versão
 
+## 0.21.1
+
+- **Nenhum endereço de servidor fixo no aplicativo.** Credenciais do Git, clone, listagem de repositórios e a fonte NuGet usam o servidor da **conexão DevOps** configurada por cada usuário.
+- **Fonte NuGet:** com o endereço em branco (padrão), o app monta o link com o servidor da conexão; sem conexão, a etapa é ignorada com aviso. O endereço continua editável.
+- O modelo de `conn.xml` embarcado não traz senha.
+
 ## 0.21.0
 
 Primeira versão publicada como instalador.

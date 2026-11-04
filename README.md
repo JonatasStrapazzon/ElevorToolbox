@@ -6,7 +6,7 @@ Aplicativo para **Windows** que reúne, em uma só janela, as ferramentas do dia
   <img src="docs/img/inicio.png" alt="Tela Início do Elevor Toolbox, com os módulos habilitados" width="820">
 </p>
 
-> **Versão atual: 0.21.0.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
+> **Versão atual: 0.21.1.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
 
 ## Sumário
 
@@ -83,6 +83,7 @@ Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao abri
 
 ## Segurança e privacidade
 
+- **Nenhum endereço de servidor vem embutido.** O servidor DevOps (Git, clone, listagem de repositórios e fonte NuGet) vem sempre da **conexão que você configura**; sem ela, essas funções avisam o que falta configurar.
 - **Nenhuma senha vem embutida.** A senha do `sa` do SQL Server, a senha da conta de domínio e o PAT começam **em branco** e são digitados por você.
 - O **PAT** é guardado criptografado com o **DPAPI do Windows**, vinculado ao seu usuário. A senha da conta de domínio fica no **Gerenciador de Credenciais do Windows**.
 - Mensagens de erro e logs **mascaram** senhas e tokens.
