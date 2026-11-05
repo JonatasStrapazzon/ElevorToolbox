@@ -22,6 +22,18 @@ Este módulo **não precisa de conexão DevOps**.
 
 O editor precisa de permissão de escrita na pasta (em pastas protegidas, abra com uma conta com permissão ou como administrador). Se outro programa alterar o arquivo, o salvamento é recusado até você reabri-lo. Para voltar a um backup, feche os programas que usam o arquivo, preserve a versão atual e copie o backup desejado para `conn.xml`.
 
+## Depois de salvar: reinício do aplicativo
+
+O ERP guarda a conexão **em memória** e só relê o `conn.xml` quando o aplicativo reinicia. Por isso, depois de salvar, o Toolbox reinicia o aplicativo do ERP para ele passar a usar o arquivo novo, e mostra o andamento na própria janela de confirmação:
+
+- A janela **conn.xml salvo com sucesso** mostra o arquivo e o backup, e uma **barra de carregamento** com "Reiniciando o aplicativo do ERP… aguarde". O **OK** só é liberado quando o reinício termina, e a janela não fecha antes disso.
+- **Como reinicia:** o Toolbox atualiza a data do `Web.config` que está na mesma pasta do `conn.xml`. Isso reinicia o aplicativo ASP.NET no **IIS** e no **IIS Express**, sem pedir administrador e sem derrubar os outros sites. O conteúdo do `Web.config` não é alterado.
+- **Reserva:** se não houver `Web.config` na pasta, ou não for possível atualizá-lo, o Toolbox roda o `iisreset` (como administrador, ou pedindo a permissão do Windows). O `iisreset` **não alcança o IIS Express**: nesse caso, pare e inicie a depuração de novo.
+- **Se falhar:** a janela mostra o motivo e pede para reiniciar o IIS (ou o IIS Express) **manualmente** para o ERP ler o novo arquivo. O `conn.xml` já está salvo.
+- Se o IIS não estiver instalado, nada é reiniciado e nenhum aviso é mostrado.
+
+> O reinício pelo `Web.config` mantém a depuração do Visual Studio anexada (o processo do IIS Express continua o mesmo). Se mesmo assim o `conn.aspx` continuar mostrando o nome antigo da base, veja [Solução de problemas](solucao-de-problemas.md#editor-connxml).
+
 ## Criar um conn.xml novo
 
 1. Clique em **Novo XML** (ou, em *Ambiente de trabalho → 7. Criar conn.xml*, **Preencher conn.xml**). O Toolbox carrega a estrutura e os valores padrão do modelo embarcado, com o **nome da base e a senha em branco**: a senha é sempre digitada por você.

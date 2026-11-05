@@ -1,5 +1,10 @@
 # Notas de versão
 
+## 0.22.2
+
+- **Editor conn.xml reinicia o aplicativo do ERP depois de salvar**, para o ERP ler o novo arquivo (ele guarda a conexão em memória). Usa o `Web.config` da pasta (vale para IIS e IIS Express, sem administrador) e, se não der, o `iisreset`. Veja [Editor conn.xml](docs/editor-conn-xml.md#depois-de-salvar-reinício-do-aplicativo).
+- A janela de confirmação do salvamento mostra uma **barra de carregamento** durante o reinício e só libera o OK quando termina. Se falhar, mostra o motivo e pede o reinício manual do IIS.
+
 ## 0.22.1
 
 - **Abrir o Toolbox de novo com ele na bandeja** voltou a funcionar quando a instância em segundo plano está como administrador: antes aparecia "O Toolbox já está aberto".

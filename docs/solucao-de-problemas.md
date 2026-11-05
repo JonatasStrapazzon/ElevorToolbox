@@ -23,6 +23,13 @@
 | **O IIS pede reinício** | A etapa informa e bloqueia novas alterações até reiniciar e consultar de novo. |
 | **A atualização ou o aviso não aparecem** | Veja [Atualizações](atualizacoes.md#se-o-aviso-não-aparece). |
 
+## Editor conn.xml
+
+| Sintoma | O que fazer |
+|---|---|
+| **O `conn.aspx` continua mostrando o nome antigo da base** depois de salvar | O ERP guarda o `conn.xml` em memória e só o relê quando o aplicativo reinicia. O Toolbox reinicia o aplicativo ao salvar (veja [Editor conn.xml](editor-conn-xml.md#depois-de-salvar-reinício-do-aplicativo)). Se o aviso disser que não conseguiu, reinicie o IIS manualmente (`iisreset` em um terminal de administrador) ou, no IIS Express, pare e inicie a depuração. |
+| **"Não foi possível reiniciar o aplicativo automaticamente"** | Atualizar o `Web.config` e o `iisreset` falharam (sem permissão, UAC cancelado ou `iisreset` demorou). O `conn.xml` está salvo; reinicie o IIS manualmente. |
+
 ## Conexão DevOps
 
 | Sintoma | O que fazer |
