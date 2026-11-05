@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.22.3
+
+- O **aviso de atualização** no canto superior do cabeçalho agora aparece também no tema claro (antes ficava em branco sobre o cabeçalho branco e só surgia depois de alternar o tema).
+
 ## 0.22.2
 
 - **Editor conn.xml reinicia o aplicativo do ERP depois de salvar**, para o ERP ler o novo arquivo (ele guarda a conexão em memória). Usa o `Web.config` da pasta (vale para IIS e IIS Express, sem administrador) e, se não der, o `iisreset`. Veja [Editor conn.xml](docs/editor-conn-xml.md#depois-de-salvar-reinício-do-aplicativo).
