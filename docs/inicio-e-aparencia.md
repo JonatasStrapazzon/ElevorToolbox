@@ -13,7 +13,7 @@ O Toolbox abre na aba **Início**, com um cartão para cada módulo. **Em uma in
 - **Habilitar** mostra a aba do módulo no topo; **desabilitar** a oculta. Os cartões continuam no Início para permitir reativar. O Início nunca some.
 - As escolhas são salvas automaticamente por usuário e restauradas ao abrir. Se a gravação falhar, a opção anterior é mantida.
 - **Operações em andamento** precisam terminar antes de desabilitar um módulo ou fechar o Toolbox. Desabilitar preserva configurações e rascunhos da sessão.
-- Os módulos **Gerador de tasks**, **PR Notifier** e **Ambiente de trabalho** dependem da [conexão DevOps](conexao-devops.md): sem ela **não ativam**, e, se a configuração for apagada depois, o Toolbox **avisa ao abrir** o módulo.
+- Os módulos **Gerador de tasks**, **PR Notifier**, **Minhas tasks** e **Ambiente de trabalho** dependem da [conexão DevOps](conexao-devops.md): sem ela **não ativam**, e, se a configuração for apagada depois, o Toolbox **avisa ao abrir** o módulo.
 - A etapa de criação do `conn.xml` no Ambiente usa o módulo **Editor conn.xml**; se ele estiver desabilitado, a etapa pede para habilitá-lo.
 
 ### Ordenar módulos e abas

@@ -6,7 +6,7 @@ Aplicativo para **Windows** que reúne, em uma só janela, as ferramentas do dia
   <img src="docs/img/inicio.png" alt="Tela Início do Elevor Toolbox, com os módulos habilitados" width="820">
 </p>
 
-> **Versão atual: 0.21.3.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
+> **Versão atual: 0.22.0.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
 
 ## Sumário
 
@@ -56,6 +56,7 @@ Os demais arquivos da release (`.nupkg`, `RELEASES`, `releases.win.json`) são u
 | [**Gerador de tasks**](docs/gerador-de-tasks.md) | Cria no Azure DevOps os pares de tasks de desenvolvimento e teste de uma User Story, reaproveitando o que já existe. | Sim |
 | [**Direct SQL Server**](docs/direct-sql-server.md) | Restaura backups (`.bak`, ZIP, RAR, 7z ou link) direto no SQL Server local, e executa scripts SQL e manutenção. | Não |
 | [**PR Notifier**](docs/pr-notifier.md) | Avisa na bandeja sobre comentários, votos, conflitos e builds dos seus Pull Requests. | Sim |
+| [**Minhas tasks**](docs/minhas-tasks.md) | Lista as suas tasks ativas, controla o tempo (play/pause), copia nomes de branch e de PR com um clique, e prepara a extensão de navegador. | Sim |
 
 Também há **temas claro e escuro**, paletas de cor e idioma (português e inglês) em *Aparência e idioma*. Veja [Início, módulos e aparência](docs/inicio-e-aparencia.md).
 
@@ -71,13 +72,14 @@ Também há **temas claro e escuro**, paletas de cor e idioma (português e ingl
 | [Gerador de tasks](docs/gerador-de-tasks.md) | Pares de tasks de uma User Story. |
 | [Direct SQL Server](docs/direct-sql-server.md) | Guia completo de restauração, scripts e manutenção. |
 | [PR Notifier](docs/pr-notifier.md) | Guia completo de notificações de Pull Requests. |
+| [Minhas tasks](docs/minhas-tasks.md) | Tasks ativas, controle de tempo, nomes de branch e PR, extensão do navegador. |
 | [Atualizações](docs/atualizacoes.md) | Como o Toolbox se atualiza. |
 | [Solução de problemas](docs/solucao-de-problemas.md) | Erros comuns e o que fazer. |
 | Histórico | [Toolbox](CHANGELOG.md) · [PR Notifier](docs/changelog-pr-notifier.md) · [Direct SQL Server](docs/changelog-direct-sql-server.md) |
 
 ## Atualizações automáticas
 
-Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao abrir, sempre que a janela reaparece e a cada hora. Quando existe, o número da versão no cabeçalho vira um aviso clicável (`v0.21.3 → vX — atualizar`); ao clicar, o app confirma, baixa e reinicia já na versão nova. Detalhes em [Atualizações](docs/atualizacoes.md).
+Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao abrir, sempre que a janela reaparece e a cada hora. Quando existe, o número da versão no cabeçalho vira um aviso clicável (`v0.22.0 → vX — atualizar`); ao clicar, o app confirma, baixa e reinicia já na versão nova. Detalhes em [Atualizações](docs/atualizacoes.md).
 
 ## Segurança e privacidade
 

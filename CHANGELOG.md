@@ -1,5 +1,24 @@
 # Notas de versão
 
+## 0.22.0
+
+- **Novo módulo: Minhas tasks.** Lista as suas tasks ativas do Azure DevOps com **play/pause** do tempo (lança *Completed Work* e *Remaining Work* ao pausar), botões **Feature**, **Hotfix**, **Pull Request**, **Feature Retorno** e **PR Retorno** que copiam o nome para a área de transferência, e uma aba **Nome manual** que sugere, de uma vez, todos os nomes a partir de um texto digitado. Usa a conexão DevOps do Toolbox, sem campos próprios.
+- **Extensão do navegador embutida**: o Toolbox prepara a extensão (Brave, Chrome ou Edge), abre a página de extensões e permite remover os arquivos. Veja [Minhas tasks](docs/minhas-tasks.md).
+- **Novo ícone do aplicativo.**
+- Documentação completa de todos os módulos, incluindo Direct SQL Server e PR Notifier.
+
+## 0.21.3
+
+- O link do Pull Request no PR Notifier mantém o repositório mesmo quando o campo *Repositório* da conexão está em branco.
+
+## 0.21.2
+
+- O Toolbox verifica atualização sempre que a janela reaparece (mesmo vivo na bandeja por causa do PR Notifier).
+
+## 0.21.1
+
+- O aplicativo não traz mais endereço de servidor fixo: o servidor e a fonte NuGet vêm da conexão DevOps configurada.
+
 ## 0.21.0
 
 Primeira versão publicada como instalador.

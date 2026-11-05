@@ -10,9 +10,9 @@ Instalado pelo **Setup** (`ElevorToolbox-win-Setup.exe`), o Toolbox **procura ve
 - **toda vez que a janela volta a aparecer** (mesmo com o aplicativo vivo na bandeja por causa do PR Notifier), no máximo uma vez a cada 2 minutos;
 - **a cada hora** enquanto estiver aberto.
 
-Quando há uma versão nova, o número no cabeçalho vira um aviso clicável: `v0.21.3 → v0.21.4 — atualizar`. Ao clicar, o Toolbox confirma, **baixa a atualização** (com a porcentagem) e **reinicia já na versão nova**. Ele não atualiza durante uma operação em andamento nem com alterações não salvas.
+Quando há uma versão nova, o número no cabeçalho vira um aviso clicável: `v0.22.0 → v0.22.1 — atualizar`. Ao clicar, o Toolbox confirma, **baixa a atualização** (com a porcentagem) e **reinicia já na versão nova**. Ele não atualiza durante uma operação em andamento nem com alterações não salvas.
 
-As atualizações vêm das **Releases** deste repositório. Os módulos (Ambiente, Editor conn.xml, Gerador de tasks, Direct SQL Server e PR Notifier) são atualizados **junto**, no mesmo pacote.
+As atualizações vêm das **Releases** deste repositório. Os módulos (Ambiente, Editor conn.xml, Gerador de tasks, Direct SQL Server, PR Notifier e Minhas tasks) são atualizados **junto**, no mesmo pacote.
 
 ## Observações
 

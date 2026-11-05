@@ -1,6 +1,6 @@
 # Solução de problemas
 
-> ver o [índice da documentação](../README.md#documentação) · problemas específicos de cada módulo estão nas páginas [PR Notifier](pr-notifier.md#solução-de-problemas) e [Direct SQL Server](direct-sql-server.md#solução-de-problemas)
+> ver o [índice da documentação](../README.md#documentação) · problemas específicos de cada módulo estão nas páginas [PR Notifier](pr-notifier.md#solução-de-problemas), [Direct SQL Server](direct-sql-server.md#solução-de-problemas) e [Minhas tasks](minhas-tasks.md#solução-de-problemas)
 
 ## Instalação e abertura
 
