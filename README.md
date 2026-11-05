@@ -14,11 +14,10 @@ Aplicativo para **Windows** que reúne, em uma só janela, as ferramentas do dia
 - [Requisitos](#requisitos)
 - [Primeiros passos](#primeiros-passos)
 - [Módulos](#módulos)
-- [Instalação manual e automática do ambiente](#instalação-manual-e-automática-do-ambiente)
+- [Documentação](#documentação)
 - [Atualizações automáticas](#atualizações-automáticas)
 - [Segurança e privacidade](#segurança-e-privacidade)
 - [Onde ficam seus dados](#onde-ficam-seus-dados)
-- [Solução de problemas](#solução-de-problemas)
 - [Desinstalar](#desinstalar)
 - [Limitações conhecidas](#limitações-conhecidas)
 
@@ -37,7 +36,7 @@ Os demais arquivos da release (`.nupkg`, `RELEASES`, `releases.win.json`) são u
 - Windows 10 ou 11, 64 bits.
 - .NET 9 Desktop Runtime (instalado pelo Setup quando necessário).
 - Acesso à internet para baixar instaladores e verificar atualizações.
-- Para as etapas do **Ambiente de trabalho**: executar o Toolbox **como administrador** (o aplicativo mostra uma faixa no topo com o botão *Reabrir como administrador*).
+- Para as etapas do **Ambiente de trabalho**: executar o Toolbox **como administrador** (faixa no topo com o botão *Reabrir como administrador*).
 - Para os módulos que usam o Azure DevOps: um **Personal Access Token (PAT)** e, para o Ambiente de trabalho, uma **conta de domínio**.
 
 ## Primeiros passos
@@ -49,43 +48,42 @@ Os demais arquivos da release (`.nupkg`, `RELEASES`, `releases.win.json`) são u
 
 ## Módulos
 
-| Módulo | Para que serve |
+| Módulo | Para que serve | Precisa de DevOps |
+|---|---|---|
+| [**Início**](docs/inicio-e-aparencia.md) | Habilitar, desabilitar e reordenar os módulos; tema, paleta e idioma. | Não |
+| [**Ambiente de trabalho**](docs/ambiente-de-trabalho.md) | Prepara o computador: pastas, IIS, Visual Studio, SQL Server Express e SSMS, Git, Node.js, clone e compilação do repositório, restauração da base, `conn.xml` e aplicativo no IIS. Manual (etapa a etapa) ou [automático](docs/instalacao-automatica.md). | Sim (conexão + conta de domínio) |
+| [**Editor conn.xml**](docs/editor-conn-xml.md) | Abre, edita e cria o `conn.xml` criptografado, com validação, revisão e backup. | Não |
+| [**Gerador de tasks**](docs/gerador-de-tasks.md) | Cria no Azure DevOps os pares de tasks de desenvolvimento e teste de uma User Story, reaproveitando o que já existe. | Sim |
+| [**Direct SQL Server**](docs/direct-sql-server.md) | Restaura backups (`.bak`, ZIP, RAR, 7z ou link) direto no SQL Server local, e executa scripts SQL e manutenção. | Não |
+| [**PR Notifier**](docs/pr-notifier.md) | Avisa na bandeja sobre comentários, votos, conflitos e builds dos seus Pull Requests. | Sim |
+
+Também há **temas claro e escuro**, paletas de cor e idioma (português e inglês) em *Aparência e idioma*. Veja [Início, módulos e aparência](docs/inicio-e-aparencia.md).
+
+## Documentação
+
+| Página | Conteúdo |
 |---|---|
-| **Início** | Habilitar, desabilitar e reordenar os módulos. |
-| **Ambiente de trabalho** | Instalação **manual** (etapa a etapa) ou **automática** do ambiente: pastas, IIS, Visual Studio, SQL Server Express e SSMS, Git, Node.js, clone, compilação, restauração de base, conn.xml e aplicativo no IIS. |
-| **Editor conn.xml** | Abrir, editar e criar o `conn.xml` criptografado, com validação dos campos e backup ao salvar. |
-| **Gerador de tasks** | Gerar tasks no Azure DevOps a partir de modelos, conciliando com o que já existe. |
-| **Direct SQL Server** | Restaurar backups (`.bak` ou arquivos compactados) direto no SQL Server local, sem etapas manuais. |
-| **PR Notifier** | Avisar na bandeja do sistema sobre comentários, votos, conflitos e builds dos seus Pull Requests. |
-
-Também há **temas claro e escuro**, paletas de cor e idioma (português e inglês) em *Aparência e idioma* (engrenagem ao lado do botão de tema).
-
-## Instalação manual e automática do ambiente
-
-No módulo **Ambiente de trabalho** há duas abas:
-
-<p align="center">
-  <img src="docs/img/ambiente-manual.png" alt="Aba Instalação manual do Ambiente de trabalho" width="700">
-</p>
-
-- **Instalação manual**: uma etapa por vez, cada uma com seus botões *Baixar*, *Configurar* e *Instalar* quando aplicável.
-- **Instalação automática**: você **revisa tudo em uma única página** e, no final, clica em **Instalar tudo**. Nada é baixado nem instalado antes desse clique.
-
-<p align="center">
-  <img src="docs/img/ambiente-automatico.png" alt="Aba Instalação automática do Ambiente de trabalho" width="700">
-</p>
-
-Detalhes, ordem das etapas e o que é obrigatório estão em [Instalação automática](docs/instalacao-automatica.md).
+| [Início, módulos e aparência](docs/inicio-e-aparencia.md) | Ativar e ordenar módulos, tema, idioma, bandeja. |
+| [Conexão DevOps](docs/conexao-devops.md) | Servidor, coleção, projeto, PAT, conta de domínio, requisitos por módulo. |
+| [Ambiente de trabalho](docs/ambiente-de-trabalho.md) | Cada etapa da instalação manual, em detalhe. |
+| [Instalação automática](docs/instalacao-automatica.md) | Revisar tudo e instalar em sequência. |
+| [Editor conn.xml](docs/editor-conn-xml.md) | Editar e criar o `conn.xml`. |
+| [Gerador de tasks](docs/gerador-de-tasks.md) | Pares de tasks de uma User Story. |
+| [Direct SQL Server](docs/direct-sql-server.md) | Guia completo de restauração, scripts e manutenção. |
+| [PR Notifier](docs/pr-notifier.md) | Guia completo de notificações de Pull Requests. |
+| [Atualizações](docs/atualizacoes.md) | Como o Toolbox se atualiza. |
+| [Solução de problemas](docs/solucao-de-problemas.md) | Erros comuns e o que fazer. |
+| Histórico | [Toolbox](CHANGELOG.md) · [PR Notifier](docs/changelog-pr-notifier.md) · [Direct SQL Server](docs/changelog-direct-sql-server.md) |
 
 ## Atualizações automáticas
 
-Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao iniciar, **sempre que a janela volta a aparecer** (mesmo com o app na bandeja) e a cada hora. Quando existe, o número da versão no cabeçalho vira um aviso clicável (`v0.21.0 → vX — atualizar`). Ao clicar, o app confirma, baixa a atualização e reinicia já na versão nova. O Toolbox não atualiza durante uma operação em andamento nem com alterações não salvas.
+Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao abrir, sempre que a janela reaparece e a cada hora. Quando existe, o número da versão no cabeçalho vira um aviso clicável (`v0.21.3 → vX — atualizar`); ao clicar, o app confirma, baixa e reinicia já na versão nova. Detalhes em [Atualizações](docs/atualizacoes.md).
 
 ## Segurança e privacidade
 
-- **Nenhum endereço de servidor vem embutido.** O servidor DevOps (Git, clone, listagem de repositórios e fonte NuGet) vem sempre da **conexão que você configura**; sem ela, essas funções avisam o que falta configurar.
 - **Nenhuma senha vem embutida.** A senha do `sa` do SQL Server, a senha da conta de domínio e o PAT começam **em branco** e são digitados por você.
 - O **PAT** é guardado criptografado com o **DPAPI do Windows**, vinculado ao seu usuário. A senha da conta de domínio fica no **Gerenciador de Credenciais do Windows**.
+- O endereço do servidor DevOps vem **da sua conexão**; o aplicativo não traz servidor fixo.
 - Mensagens de erro e logs **mascaram** senhas e tokens.
 - Os instaladores são baixados apenas de fontes oficiais (Microsoft, site do Git, nodejs.org) e verificados por **assinatura digital** e/ou **SHA-256** antes de executar.
 - O PR Notifier é **somente leitura**: só consulta o Azure DevOps.
@@ -99,14 +97,7 @@ Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao inic
 | Logs de compilação e instalação | `%LOCALAPPDATA%\ElevorToolbox\logs` |
 | Aplicativo instalado | `%LOCALAPPDATA%\ElevorToolbox` |
 
-## Solução de problemas
-
-- **"Sem permissão de administrador…" no topo:** use *Reabrir como administrador*. As etapas do Ambiente de trabalho precisam disso.
-- **Não consigo habilitar um módulo:** ele depende da conexão DevOps (e, no Ambiente, da conta de domínio). Complete em engrenagem → **DevOps**.
-- **"MSBuild não encontrado" ao compilar:** instale o Visual Studio com a carga de trabalho de desenvolvimento web/desktop (etapa 3).
-- **A instalação do SQL Server falhou:** consulte `C:\Program Files\Microsoft SQL Server\<versão>\Setup Bootstrap\Log\Summary.txt`.
-- **Clone falhou:** confira o PAT (*Testar PAT*) e a rede/VPN até o servidor DevOps; a mensagem mostra o último erro do Git.
-- **O aviso do SmartScreen aparece:** é esperado enquanto o instalador não é assinado; veja [Download e instalação](#download-e-instalação).
+Problemas? Veja [Solução de problemas](docs/solucao-de-problemas.md).
 
 ## Desinstalar
 

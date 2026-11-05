@@ -20,10 +20,6 @@ Todos os campos começam **em branco** (a conta de domínio começa só com o pr
 
 O Git usa sempre o **PAT**: não há mais escolha de autenticação.
 
-## Fonte NuGet
-
-Na janela de configuração do Visual Studio (*Configuração final*), o **endereço da fonte NuGet** pode ficar em branco: nesse caso o Toolbox usa o **servidor da sua conexão** e o caminho padrão do feed. Informe um endereço completo se o seu feed for outro. Sem conexão configurada, a etapa do NuGet é ignorada com um aviso.
-
 ## Conta de domínio (Git e NuGet)
 
 - Informe o usuário depois de `elevor.local\` (por exemplo `elevor.local\usuario`) e a senha.
