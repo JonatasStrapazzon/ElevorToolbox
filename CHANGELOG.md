@@ -1,5 +1,11 @@
 # Notas de versão
 
+## 0.22.1
+
+- **Abrir o Toolbox de novo com ele na bandeja** voltou a funcionar quando a instância em segundo plano está como administrador: antes aparecia "O Toolbox já está aberto".
+- **Atualização do ícone:** ao instalar ou atualizar, o Toolbox reaponta o ícone dos atalhos (Área de Trabalho, Menu Iniciar e barra de tarefas) e pede ao Windows que recarregue os ícones.
+- Prints da documentação atualizados.
+
 ## 0.22.0
 
 - **Novo módulo: Minhas tasks.** Lista as suas tasks ativas do Azure DevOps com **play/pause** do tempo (lança *Completed Work* e *Remaining Work* ao pausar), botões **Feature**, **Hotfix**, **Pull Request**, **Feature Retorno** e **PR Retorno** que copiam o nome para a área de transferência, e uma aba **Nome manual** que sugere, de uma vez, todos os nomes a partir de um texto digitado. Usa a conexão DevOps do Toolbox, sem campos próprios.
