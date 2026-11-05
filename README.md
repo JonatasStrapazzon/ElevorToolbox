@@ -6,7 +6,7 @@ Aplicativo para **Windows** que reúne, em uma só janela, as ferramentas do dia
   <img src="docs/img/inicio.png" alt="Tela Início do Elevor Toolbox, com os módulos habilitados" width="820">
 </p>
 
-> **Versão atual: 0.21.2.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
+> **Versão atual: 0.21.3.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
 
 ## Sumário
 

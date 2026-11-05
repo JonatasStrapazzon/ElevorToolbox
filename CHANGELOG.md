@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.21.3
+
+- **PR Notifier:** o link do resumo de alterações de um PR (e da lista de PRs) agora mantém o nome do repositório mesmo quando o campo *Repositório* da conexão DevOps está em branco. Antes o link saía como `/_git/pullrequest/<id>` e abria "Page not found".
+
 ## 0.21.2
 
 - **Atualização automática ao reabrir a janela.** Com o app vivo na bandeja (PR Notifier), a verificação agora também roda sempre que a janela volta a aparecer, no máximo a cada 2 minutos. A checagem periódica passou de 6 horas para 1 hora.
