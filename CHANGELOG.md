@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.22.6
+
+- **Minhas tasks** passou a incluir o número do CRM no botão **Pull Request** (`CRM 351143 - Título`) também quando o DevOps devolve o código como número.
+
 ## 0.22.5
 
 - **Gerador de tasks lê melhor a análise.** Caracteres invisíveis e marcadores (como `•`) antes de “Task N” não escondem mais a task: antes uma “Task 1” podia ser ignorada e a prévia avisava de salto na sequência.
