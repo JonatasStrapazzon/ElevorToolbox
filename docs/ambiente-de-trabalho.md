@@ -66,11 +66,11 @@ Quatro abas independentes: **Baixar**, **Configurar**, **Instalar** e **Configur
 
 Os utilitários executados precisam ter **assinatura Microsoft válida**. Códigos 1001/1618 indicam que a Microsoft exige aguardar outra instalação terminar.
 
-## 4. SQL Server Express e Management Studio
+## 4. SQL Server Developer e Management Studio
 
 Abas **Baixar**, **Configurar** e **Instalar**.
 
-1. **Baixar:** baixa o **SQL Server Express** (atualmente 2025) e/ou o **Management Studio (SSMS)** nos canais estáveis atuais da Microsoft. Os links são resolvidos a cada operação; não há Developer, Evaluation nem *preview*.
+1. **Baixar:** baixa o **SQL Server Developer** (Enterprise Developer, atualmente 2025: gratuito, com todos os recursos e **sem limite de tamanho por banco**, para desenvolvimento e teste) e/ou o **Management Studio (SSMS)** nos canais estáveis atuais da Microsoft. Os links são resolvidos a cada operação; não há Evaluation nem *preview*.
 2. **Configurar:** instância (padrão `MSSQLSERVER`, editável), pasta de dados e logs (por padrão `<disco>:\Inetpub\SQLServerData`), conta Windows administradora do SQL e a **senha do `sa`** com confirmação. **Não há senha padrão:** você digita a senha, que precisa ter 8 ou mais caracteres e três grupos entre maiúsculas, minúsculas, números e símbolos. Os botões de olho mostram ou ocultam cada campo.
 3. **Instalar:** aceite os termos da Microsoft e clique em **Baixar e instalar selecionados**. A instalação pede administrador.
 

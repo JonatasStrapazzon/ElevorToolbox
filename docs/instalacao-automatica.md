@@ -33,7 +33,7 @@ A lista **Pendências**, acima do botão, mostra exatamente o que falta; o botã
 1. Estrutura de pastas
 2. Recursos do Windows — IIS
 3. Visual Studio
-4. SQL Server Express e Management Studio
+4. SQL Server Developer e Management Studio
 5. Git
 6. Node.js (LTS ativa)
 7. Clonar repositório do DevOps

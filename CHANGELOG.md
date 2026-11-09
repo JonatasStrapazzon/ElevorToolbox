@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.22.7
+
+- **Ambiente de trabalho instala o SQL Server Developer** (Enterprise Developer) em vez do Express. O Express 2025 limita cada banco a 50 GB e impedia restaurar bases grandes (“tamanho acumulado … excederia o seu limite licenciado de 51200 MB”). O Developer é gratuito, sem esse limite, e de uso em desenvolvimento e teste. Quem já instalou o Express precisa fazer o upgrade de edição no instalador do SQL Server ou instalar o Developer. Veja [Ambiente de trabalho](docs/ambiente-de-trabalho.md).
+
 ## 0.22.6
 
 - **Minhas tasks** passou a incluir o número do CRM no botão **Pull Request** (`CRM 351143 - Título`) também quando o DevOps devolve o código como número.
