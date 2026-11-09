@@ -6,7 +6,7 @@ Aplicativo para **Windows** que reúne, em uma só janela, as ferramentas do dia
   <img src="docs/img/inicio.png" alt="Tela Início do Elevor Toolbox, com os módulos habilitados" width="820">
 </p>
 
-> **Versão atual: 0.22.4.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
+> **Versão atual: 0.22.5.** Veja o que mudou no [CHANGELOG](CHANGELOG.md).
 
 ## Sumário
 
@@ -79,7 +79,7 @@ Também há **temas claro e escuro**, paletas de cor e idioma (português e ingl
 
 ## Atualizações automáticas
 
-Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao abrir, sempre que a janela reaparece e a cada hora. Quando existe, o número da versão no cabeçalho vira um aviso clicável (`v0.22.4 → vX — atualizar`); ao clicar, o app confirma, baixa e reinicia já na versão nova. Detalhes em [Atualizações](docs/atualizacoes.md).
+Instalado pelo Setup, o Toolbox **verifica sozinho** se há versão nova ao abrir, sempre que a janela reaparece e a cada hora. Quando existe, o número da versão no cabeçalho vira um aviso clicável (`v0.22.5 → vX — atualizar`); ao clicar, o app confirma, baixa e reinicia já na versão nova. Detalhes em [Atualizações](docs/atualizacoes.md).
 
 ## Segurança e privacidade
 

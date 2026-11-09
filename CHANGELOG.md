@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.22.5
+
+- **Gerador de tasks lê melhor a análise.** Caracteres invisíveis e marcadores (como `•`) antes de “Task N” não escondem mais a task: antes uma “Task 1” podia ser ignorada e a prévia avisava de salto na sequência.
+
 ## 0.22.4
 
 - **Gerador de tasks desconsidera tasks de UX.** Tasks com a palavra UX no título (e que não são de desenvolvimento nem de teste) não bloqueiam mais a criação dos pares de desenvolvimento e teste, não são alteradas e geram só um aviso. Veja [Gerador de tasks](docs/gerador-de-tasks.md).
