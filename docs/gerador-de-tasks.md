@@ -32,6 +32,7 @@ O Gerador associa as tasks existentes aos pares da análise pelo **título final
 - Os campos de modelo e as opções de cópia só aparecem quando há criação. Se faltar só a QA, pede só o modelo de QA. Se os nomes já estão certos, avisa que **nenhuma alteração é necessária**.
 - **Numerações duplicadas**, várias tasks sem número ou **tipo não identificado** impedem associações incertas: nada é criado até os títulos serem esclarecidos.
 - Tasks **excedentes** são preservadas com aviso; **nada é excluído**.
+- Tasks de **UX** (título com a palavra **UX**, como `UX: Protótipo da tela` ou `UI/UX - revisão`) que não sejam de desenvolvimento nem de teste são **desconsideradas**: não entram na associação, não bloqueiam a criação dos pares e não são alteradas. Um aviso informa quantas foram ignoradas. Qualquer outra task sem tipo identificado continua bloqueando, para evitar associações incertas.
 
 ## Dados e segurança
 

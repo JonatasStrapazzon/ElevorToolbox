@@ -1,5 +1,9 @@
 # Notas de versão
 
+## 0.22.4
+
+- **Gerador de tasks desconsidera tasks de UX.** Tasks com a palavra UX no título (e que não são de desenvolvimento nem de teste) não bloqueiam mais a criação dos pares de desenvolvimento e teste, não são alteradas e geram só um aviso. Veja [Gerador de tasks](docs/gerador-de-tasks.md).
+
 ## 0.22.3
 
 - O **aviso de atualização** no canto superior do cabeçalho agora aparece também no tema claro (antes ficava em branco sobre o cabeçalho branco e só surgia depois de alternar o tema).
