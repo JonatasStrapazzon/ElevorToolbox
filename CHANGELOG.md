@@ -1,5 +1,10 @@
 # Notas de versão
 
+## 0.22.8
+
+- **Abrir como administrador com o Toolbox já na bandeja:** se há uma janela sem administrador aberta (por exemplo, iniciada com o Windows), a cópia aberta como administrador pergunta “Fechar esta e abrir como administrador?” e assume o lugar. Com operação em andamento ou alterações não salvas, a troca não acontece.
+- **Iniciar com o Windows (PR Notifier):** quando o Toolbox instalado abre, ele passa a ser o dono da entrada de inicialização. Antes, uma entrada criada por uma cópia solta continuava abrindo essa cópia antiga no login, sem administrador e sem aviso de atualização.
+
 ## 0.22.7
 
 - **Ambiente de trabalho instala o SQL Server Developer** (Enterprise Developer) em vez do Express. O Express 2025 limita cada banco a 50 GB e impedia restaurar bases grandes (“tamanho acumulado … excederia o seu limite licenciado de 51200 MB”). O Developer é gratuito, sem esse limite, e de uso em desenvolvimento e teste. Quem já instalou o Express precisa fazer o upgrade de edição no instalador do SQL Server ou instalar o Developer. Veja [Ambiente de trabalho](docs/ambiente-de-trabalho.md).
