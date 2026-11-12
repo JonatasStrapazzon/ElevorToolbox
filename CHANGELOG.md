@@ -1,5 +1,12 @@
 # Notas de versão
 
+## 0.22.9
+
+- **Direct SQL Server (via link) lê o ZIP em blocos maiores.** Cada bloco passou de 8 MB para 32 MB, o que reduz o custo de iniciar cada requisição e ajuda em arquivos grandes. O tempo limite deixou de ser “60 s por bloco” e passou a ser “30 s sem receber nenhum dado”, então blocos grandes em conexões lentas não estouram o prazo. A velocidade final ainda depende do seu link e do servidor do arquivo.
+- **Listas suspensas fecham quando a página rola.** Antes, uma lista aberta ficava parada na tela se você rolasse a página, girasse a roda do mouse fora dela ou movesse a janela. Agora ela fecha nesses casos. Vale para as listas do Toolbox, do Gerador de tasks e do PR Notifier.
+- **Abas internas alinhadas à esquerda em todos os módulos.** O fundo cinza das abas (por exemplo Restaurar, Scripts SQL, Configurações e Manutenção, no Direct SQL Server) começava deslocado para a direita em relação ao conteúdo abaixo; agora fica rente à borda esquerda.
+- **Novo módulo Sprint Health, ainda em construção.** Aparece no **Início** com a marca **Em construção** e o controle travado (**Indisponível**): não é possível ativá-lo nesta versão. Quando ficar pronto, mostrará por pessoa, dia e task o que foi lançado em Completed e abatido de Remaining na sprint, com capacidade e metas por dia.
+
 ## 0.22.8
 
 - **Abrir como administrador com o Toolbox já na bandeja:** se há uma janela sem administrador aberta (por exemplo, iniciada com o Windows), a cópia aberta como administrador pergunta “Fechar esta e abrir como administrador?” e assume o lugar. Com operação em andamento ou alterações não salvas, a troca não acontece.

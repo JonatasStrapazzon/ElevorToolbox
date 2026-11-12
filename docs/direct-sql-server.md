@@ -56,7 +56,7 @@ Este módulo **não precisa de conexão DevOps**: ele conversa apenas com o SQL 
 - **Seguro por padrão:** conecta só no SQL Server **do próprio computador**, com a **autenticação do Windows**. Não pede nem guarda senha.
 - **Cancelar** a restauração a qualquer momento, removendo a base parcial.
 - **Integridade:** confere o CRC do ZIP sozinho e, se você quiser, roda o `DBCC CHECKDB` no fim.
-- **Aguenta queda de rede** no modo link: espera e continua de onde parou.
+- **Aguenta queda de rede** no modo link: espera e continua de onde parou. O ZIP é lido em blocos de 32 MB, em várias conexões ao mesmo tempo, e uma conexão que fica 30 s sem receber dados é refeita.
 - **Links** do Dropbox, Google Drive, OneDrive, SharePoint e S3.
 - **Avisa** quando termina (aviso do app e/ou notificação do Windows) e **limpa sobras** de restaurações interrompidas.
 - **Depois de restaurar (opcional):** executar scripts SQL salvos e **reduzir o arquivo de log**.

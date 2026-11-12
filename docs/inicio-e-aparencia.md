@@ -14,6 +14,7 @@ O Toolbox abre na aba **Início**, com um cartão para cada módulo. **Em uma in
 - As escolhas são salvas automaticamente por usuário e restauradas ao abrir. Se a gravação falhar, a opção anterior é mantida.
 - **Operações em andamento** precisam terminar antes de desabilitar um módulo ou fechar o Toolbox. Desabilitar preserva configurações e rascunhos da sessão.
 - Os módulos **Gerador de tasks**, **PR Notifier**, **Minhas tasks** e **Ambiente de trabalho** dependem da [conexão DevOps](conexao-devops.md): sem ela **não ativam**, e, se a configuração for apagada depois, o Toolbox **avisa ao abrir** o módulo.
+- **Módulos em construção** aparecem no Início com a marca **Em construção**, o controle mostra **Indisponível** e não dá para ativá-los nem abri-los. Hoje é o caso do **Sprint Health** (horas lançadas por pessoa, dia e task, com capacidade e metas). Mesmo que uma configuração antiga o tenha deixado ligado, ele continua desativado.
 - A etapa de criação do `conn.xml` no Ambiente usa o módulo **Editor conn.xml**; se ele estiver desabilitado, a etapa pede para habilitá-lo.
 
 ### Ordenar módulos e abas
